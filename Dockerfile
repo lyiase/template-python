@@ -19,6 +19,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 # set env : python workdirs
 ENV PYTHONPATH=/app
 ENV PATH="/app/.venv/bin:$PATH"
+ENV UV_SYSTEM_CERTS=true
 #ENV HF_HOME=/app/.tf
 
 # install python libraries
