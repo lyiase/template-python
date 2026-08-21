@@ -1,4 +1,4 @@
-# template-python-gcloud
+# template-python
 
 python repository template.
 
