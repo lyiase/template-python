@@ -23,9 +23,9 @@ ENV PATH="/app/.venv/bin:$PATH"
 
 # install python libraries
 COPY pyproject.toml uv.lock ./
-RUN uv sync --system-certs --locked --no-install-project
+RUN uv sync --locked --no-install-project
 COPY . .
-RUN uv sync --system-certs --locked
+RUN uv sync --locked
 RUN python -m compileall src
 
 RUN useradd -r python
