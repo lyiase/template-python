@@ -1,5 +1,5 @@
 # variable
-ARG PYTHON_VERSION=3.13
+ARG PYTHON_VERSION=3.14
 
 FROM ghcr.io/astral-sh/uv:0.12.5 AS uv
 
